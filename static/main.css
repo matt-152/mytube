@@ -1,0 +1,23 @@
+.pagenav {
+    background-color: #222222;
+    color: #eeeeee;
+    padding: 8px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagenav-start {
+    background-color: green;
+    width: auto:
+}
+
+.pagenav-mid {
+    background-color: red;
+    flex: 1;
+}
+
+.pagenav-end {
+    background-color: blue;
+    width: 200px;
+}
