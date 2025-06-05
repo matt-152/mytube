@@ -1,4 +1,4 @@
-.pagenav {
+.PageNav {
     background-color: #222222;
     color: #eeeeee;
     padding: 8px;
@@ -7,17 +7,46 @@
     justify-content: space-between;
 }
 
-.pagenav-start {
-    background-color: green;
-    width: auto:
+.PageNav-start {
+    width: 200px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
 }
 
-.pagenav-mid {
-    background-color: red;
+.PageNav-mid {
     flex: 1;
+
+    display: flex;
+    justify-content: center;
 }
 
-.pagenav-end {
-    background-color: blue;
+.PageNav-mid-search {
+    display: flex;
+    background-color: red;
+    border 1px solid #ccc;
+    border-radius: 9999px;
+    overflow: hidden;
+    width: 400px;
+}
+
+.PageNav-mid-search > input {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.PageNav-mid-search > button {
+    padding: 0.5rem 1rem;
+    background-color: #f8f8f8;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-left: 1px solid #ccc;
+    color: #555;
+}
+
+.PageNav-end {
     width: 200px;
 }
