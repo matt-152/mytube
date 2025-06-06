@@ -50,3 +50,45 @@
 .PageNav-end {
     width: 200px;
 }
+
+.VideoCard {
+  padding: 0.5rem;
+  width: 400px;
+}
+
+.VideoCard-thumbnail {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 0.5rem;
+  
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.VideoCard-info {
+  display: flex;
+}
+
+.VideoCard-info-left {
+  width: 60px;
+}
+
+.VideoCard-info-left > div {
+  background-color: #444444;
+  width: 50px;
+  height: 50px;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.VideoCard-info-right {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.VideoCard-info-right > p {
+  font-size: 10pt;
+  color: #555555;
+}
