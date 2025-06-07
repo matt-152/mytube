@@ -5,6 +5,13 @@
 
     display: flex;
     justify-content: space-between;
+
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
 }
 
 .PageNav-start {
@@ -51,14 +58,32 @@
     width: 200px;
 }
 
+.VideoGrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.VideoGrid::-webkit-scrollbar {
+    display: none;
+}
+
 .VideoCard {
   padding: 0.5rem;
-  width: 400px;
+  min-width: 33.33%;
 }
 
 .VideoCard-thumbnail {
   width: 100%;
-  height: 200px;
+  aspect-ratio: 16 / 9;
   margin-bottom: 0.5rem;
   
   border-radius: 15px;

@@ -1,5 +1,5 @@
 import { useSignal } from "@preact/signals";
-import Counter from "../islands/Counter.tsx";
+import VideoCard from "../components/VideoCard.tsx";
 
 export default function Home() {
   const count = useSignal(3);
@@ -17,18 +17,16 @@ export default function Home() {
         </div>
         <div class="PageNav-end"></div>
       </header>
-      <div class="VideoCard">
-        <div class="VideoCard-thumbnail" style="background-color: #444444" />
-        <div class="VideoCard-info">
-          <div class="VideoCard-info-left">
-            <div/>
-          </div>
-          <div class="VideoCard-info-right">
-            <h4>My Awesome Video</h4>
-            <p>Content Creator</p>
-            <p>105K views - 5 hours ago</p>
-          </div>
-        </div>
+      <div className="VideoGrid">
+        <VideoCard />
+        <VideoCard />
+        <VideoCard />
+        <VideoCard />
+        <VideoCard />
+        <VideoCard />
+        <VideoCard />
+        <VideoCard />
+        <VideoCard />
       </div>
     </div>
   );
