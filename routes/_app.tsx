@@ -1,4 +1,6 @@
 import { type PageProps } from "$fresh/server.ts";
+import PageNav from "../components/PageNav.tsx";
+
 export default function App({ Component }: PageProps) {
   return (
     <html>
@@ -10,6 +12,7 @@ export default function App({ Component }: PageProps) {
         <link rel="stylesheet" href="/main.css" />
       </head>
       <body>
+        <PageNav />
         <Component />
       </body>
     </html>

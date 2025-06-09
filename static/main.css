@@ -1,3 +1,17 @@
+body > main {
+    /* Style scrolling for main content */
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+    scrollbar-width: none;
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
 .PageNav {
     background-color: #222222;
     color: #eeeeee;
@@ -6,6 +20,7 @@
     display: flex;
     justify-content: space-between;
 
+    /* Fix navbar to top of window */
     z-index: 1000;
     position: fixed;
     top: 0;
@@ -62,23 +77,13 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 0.5rem;
 
-    position: absolute;
-    top: 60px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    overflow-y: auto;
-    scrollbar-width: none;
-}
-
-.VideoGrid::-webkit-scrollbar {
-    display: none;
-}
-
-.VideoCard {
-  padding: 0.5rem;
-  min-width: 33.33%;
+    /* Style children into rows of 3 */
+    .VideoCard {
+        padding: 0.5rem;
+        min-width: 33.33%;
+    }
 }
 
 .VideoCard-thumbnail {
@@ -98,7 +103,7 @@
   width: 60px;
 }
 
-.VideoCard-info-left > div {
+.VideoCard-mockProfilePic {
   background-color: #444444;
   width: 50px;
   height: 50px;
@@ -111,9 +116,24 @@
 
   display: flex;
   flex-direction: column;
+
+  /* Link Styling */
+  a {
+      color: black;
+      text-decoration: none;
+      :hover {
+          color: #555555;
+      }
+  }
 }
 
 .VideoCard-info-right > p {
   font-size: 10pt;
   color: #555555;
+}
+
+.Video {
+  background-color: grey;
+  width: 500px;
+  height: 500px;
 }
