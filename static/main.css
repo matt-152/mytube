@@ -31,13 +31,19 @@ body > main {
 
 .PageNav-start {
     width: 200px;
-    padding: 0.5rem 1rem;
+    height: 100%;
     font-size: 1rem;
+
+    /* Position Text */
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
 }
 
 .PageNav-mid {
     flex: 1;
 
+    /* Center contents */
     display: flex;
     justify-content: center;
 }
@@ -133,7 +139,16 @@ body > main {
 }
 
 .Video {
+  margin: 1rem;
+}
+
+.Video > footer {
+    margin-top: 10px;
+}
+
+.VideoMock {
   background-color: grey;
-  width: 500px;
-  height: 500px;
+  aspect-ratio: 16 / 9;
+  width: 56vw;
+  border-radius: 15px;
 }
