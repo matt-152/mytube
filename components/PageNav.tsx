@@ -1,7 +1,4 @@
-import { JSX } from "preact";
-import { IS_BROWSER } from "$fresh/runtime.ts";
-
-export default function PageNav(props: JSX.HTMLAttributes<HTMLHeaderElement>) {
+export default function PageNav() {
   return (
     <header class="PageNav">
       <div class="PageNav-start">
@@ -10,7 +7,7 @@ export default function PageNav(props: JSX.HTMLAttributes<HTMLHeaderElement>) {
       <div class="PageNav-mid">
         <div class="PageNav-mid-search">
           <input type="text" placeholder="Search"></input>
-          <button>Go</button>
+          <button type="button">Go</button>
         </div>
       </div>
       <div class="PageNav-end"></div>
