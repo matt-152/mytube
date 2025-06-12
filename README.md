@@ -1,16 +1,18 @@
-# Fresh project
+# MyTube
 
-Your new Fresh project is ready to go. You can follow the Fresh "Getting
-Started" guide here: https://fresh.deno.dev/docs/getting-started
+This repository is a portfolio project to exercise and demonstrate full-stack
+development skills. The goal is to faithfully recreate [https://youtube.com],
+using mock data.
 
-### Usage
+I have strived to make the git log an informative record of development effort.
+You can consult it to track my progress and understand my thought process.
 
-Make sure to install Deno: https://deno.land/manual/getting_started/installation
+## Usage
 
-Then start the project:
+To run the project, first install deno.
+
+Then, in the root of the project, run:
 
 ```
 deno task start
 ```
-
-This will watch the project directory and restart as necessary.
